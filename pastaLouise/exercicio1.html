@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var pessoa = {
+
+idade: '22' ,
+humor: 'feliz' ,
+saude: 'boa' ,
+dinheiro: 'sem' ,
+amor: 'horrivel'
+
+}
+
+
+pessoa.saude = 'ruim'
+delete(pessoa.dinheiro)
+
+document.write((Object.values(pessoa)))
+
+</script> 
+</body>
+</html>
