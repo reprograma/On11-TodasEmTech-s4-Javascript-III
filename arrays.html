@@ -69,7 +69,9 @@
         //EXERCICIO
 
         //Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
-
+        var bandas = ["Link Park", "Led Zeppelin", "Elton John", "Queen", "Janis Joplin", "The Doors"];
+        alert(bandas.length);
+        alert(bandas[4]);
 
         //E se eu quiser adicionar itens ao final do meu array?
 
@@ -96,6 +98,19 @@
         //EX:
 
         listaCompraKeyla.pop()
+        //Pegue o array criado no primeiro exercico
+        //Adicione 2 novos itens (elementos)
+        //Apague o 2 ultimos itens adcionados 
+        var musicas = ["I'm yours", "Lucky", "Stairway To Heaven", "Under pression", "Colors", "Numb"];
+        musicas.push('Rocket man');
+        musicas.push('50ft');
+        alert(musicas);
+
+        musicas.splice([musicas.length-2]); //APAGANDO OS DOIS ÚLTIMOS ADICIONADOS
+        alert(musicas);
+
+        musicas.pop();
+        alert(musicas);
 
         // E se eu quiser remover o primeiro elemento do meu array?
 
@@ -103,7 +118,7 @@
 
         listaCompraKeyla.shift()
 
-        //Se eu quiser adicionar um elemento no primeiro lugar do meu array? (Substituir metodo .shift)
+        //Se eu quiser adicionar um elemento no primeiro lugar do meu array?
 
         //medoto .unshift atribui ao primeiro lugar um elemento
 
@@ -114,27 +129,37 @@
         //metodo .sort classifica a ordem de forma crescente (normalmente alfabetica)
 
         listaCompraKeyla.sort()
-
+        
 
         //EXERCICIO:
         //Pegue seu array criado no primeiro exercicio e teste os metodos passados aqui.
+        musicas.shift();
+        musicas.unshift("Full circle");
+        musicas.sort();
+        alert(musicas);
 
         //EXERCICIO:
 
 
         //Uma escola precisa montar a lista de alunos do 5º B (5 alunos). Crie um programa que receba CADA nome de aluno e imprima na tela em ordem alfabetica todos os alunos desta lista.
+        var cadastroAlunos = [];
+        for(var i = 0; i < 3; i++){
+            cadastroAlunos.push(prompt("Digite o nome do aluno: "));
+        };
+        cadastroAlunos.sort();
+        alert(cadastroAlunos);
 
 //Crie um array para armazenar uma lista de ingredientes para um bolo de chocolate
 // utilize includes para verificar se dentro na sua lista contém um ingrediente
 
 //Como utilizar includes
-array = ['ingrediente1', 'ingrediente2']
+array = ['Farinha de trigo', 'Chocolate', 'manteiga', 'leite', 'açúcar','fermento','ovos'];
 
-if(array.includes('ingrediente1')){
-    alert('sim, contem o ingrediente 1')
+if(array.includes('morango')){
+    alert('sim, contem o morango');
 }else{
-    alert('adicione o ingrediente a lista')
-}
+    alert('adicione o morango a lista');
+};
       
 
 // Um array por armazenar caracteristicas para esses elementos? SIM
@@ -155,13 +180,15 @@ estadoCivil: 'Casada'
 
  //COMO eu posso imprimir as informações de cada um deles?
        
-alert(Object.values(pessoas[0]))
+alert(Object.values(pessoas[0]));
 
 
 //EXERCICIO:
 
 //Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
 
-
+var mercado = [["frutas", "Melão", "Maçã", "Uva", "Abacaxi"], 
+["Grão", "Arroz", "Feijão", "Açúcar", "Farinha"], ["Carnes", "Frango","Toscana", "Coração", "Moela"], ["Higiene", "Escova", "Pasta", "Fio dental", "Creme"]];
+alert(mercado);
     </script>
 </html>

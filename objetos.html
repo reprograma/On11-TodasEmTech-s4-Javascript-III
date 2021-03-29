@@ -25,19 +25,19 @@ var pessoa = { //Declaração de que pessoa é um objeto com propriedades
 
 //EX:
 
-pessoa.nome = 'Bruna'
+pessoa.nome = 'Bruna';
 
 //Posso adicionar propriedades ao meu objeto? SIM
 
-pessoa.oculos = 'Sim'
+pessoa.oculos = 'Sim';
 
 // Posso deletar uma propriedade? SIM
 
-delete pessoa.altura
+delete pessoa.altura;
 
 //como eu imprimo TODAS as informações no meu objeto?
 
-document.write((Object.values(pessoa)))
+document.write((Object.values(pessoa)));
 
 //Alert = Esta informando que o que vem a seguir deve ser um alerta
 //document.write = esta indicando que o informação deve ser impressora (escrita) na tela HTML
@@ -48,7 +48,17 @@ document.write((Object.values(pessoa)))
 //ETAPA1: Crie um objeto com 5 caracteristicas
 //ETAPA2: Altere a 3ª caracteristica deste objeto
 //ETAPA3: Delete a 4ª caracterisca deste objeto
- 
+ var filosofo = {
+    nome: "Nietzsche",
+    nacionalidade: "Alemão",
+    nasc: 1844,
+    morte: 1900,
+    livro: "Assim Falou Zaratustra"
+    };
+    
+    filosofo.nasc = false;
+    delete filosofo.morte;
+    document.write(Object.values(filosofo));
 
 
 //E SE EU QUISER CRIAR MAIS MULTIPLOS ELEMENTOS DENTRO DE UM OBJETO? 
