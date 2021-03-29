@@ -7,5 +7,59 @@
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
-    </script>
+        var filosofes = [
+        {
+            id: 1,
+            nome: 'Friedrich Wilhelm Nietzsche',
+            nasc: 1844,
+            morte: true,
+            nacionalidade: 'Alemão'
+        },
+        {
+            id: 2,
+            nome: 'Simone Adolphine Weil',
+            nasc: 1909,
+            morte: true,
+            nacionalidade: 'Francesa'  
+        },
+        {
+            id: 3,
+            nome: 'Simone Lucie-Ernestine-Marie Bertrand de Beauvoir',
+            nasc: 1908,
+            morte: true,
+            nacionalidade: 'Francesa'
+        },
+        {
+            id: 4,
+            nome: 'Viviane Mosé',
+            nasc: 1964,
+            morte: false,
+            nacionalidade: 'Brasileira'
+        },
+        {
+            id: 5,
+            nome: 'Djamila Taís Ribeiro dos Santos',
+            nasc: 1980,
+            morte: false,
+            nacionalidade: 'Brasileira'
+        }
+        ];
+
+        function valida(){
+        var getCodigo = prompt("Insira o código: ");
+        if(!getCodigo){
+            alert("ERROR, código inválido");
+            valida();
+        }else{
+            alert(Object.values(filosofes.find(element => element.id == getCodigo)));
+        } 
+        };
+        valida();
+
+        for(var i = 0; i <= filosofes.length; i++){
+        alert(filosofes[i].nome);
+        alert(filosofes[i].nasc);
+        alert(filosofes[i].morte);
+        };
+    </script>    
 </html>
