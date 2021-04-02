@@ -1,0 +1,221 @@
+<html>
+    <meta charset="UTF-8">
+  <script>
+
+//ETAPA1: Crie um objeto com 5 caracteristicas
+//ETAPA2: Altere a 3ª caracteristica deste objeto
+//ETAPA3: Delete a 4ª caracterisca deste objeto
+
+var pessoa = {
+    nome: "Lizzie",
+    peso: 56,
+    cor: "preto",
+    idade: 31,
+    Hobby: "Ler"
+}
+//alert(pessoa.cor)
+
+document.write(Object.values(pessoa))
+document.write("<br>")
+
+//document.write(Object.values(pessoa.nome))// saira L,i,z,z,i,e
+//document.write("<br>")
+
+pessoa.cor = "azul"
+document.write(Object.values(pessoa))
+document.write("<br>")
+//alert(pessoa.cor)
+
+delete pessoa.idade
+document.write(Object.values(pessoa))
+document.write("<br>")
+
+
+
+//Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. 
+//Descubra qual o quinto elemento deste array. Teste os metodos passados aqui.
+
+var hortefruti = ['Maça', 'Uva', 'Kiwi', 'Pêra', 'Goiaba','Ameixa', 'Pinha', 'Morango']
+
+document.write(hortefruti.length)
+document.write("<br>")
+
+document.write(hortefruti[5])
+document.write("<br>")
+
+hortefruti.push('Graviola', 'Banana')
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.splice([8])
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.splice(7,1)
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.pop()
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.shift()
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.unshift("Morango")
+document.write(hortefruti)
+document.write("<br>")
+
+hortefruti.sort()
+document.write(hortefruti)
+document.write("<br>")
+
+
+//Uma escola precisa montar a lista de alunos do 5º B (5 alunos). Crie um programa que receba CADA nome de 
+//aluno e imprima na tela em ordem alfabetica todos os alunos desta lista.
+
+var listaDeAlunos = ['Luna Silva', 'Perola Santos', 'Aisha Alves', 'Victoria Martins', 'Lizzie Dias']
+document.write(listaDeAlunos)
+document.write('<br>')
+
+listaDeAlunos.sort()
+document.write(listaDeAlunos)
+document.write("<br>")
+
+// pedindo para o usuario entrar com os dados 
+var listaNomeAlunos = []
+for(i=1; i<=5; i++){
+    listaNomeAlunos.push(prompt("Digite o nome do aluno"))
+}
+listaNomeAlunos.sort()
+alert(listaNomeAlunos)
+
+
+
+//Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
+
+var pessoas = [
+        {
+            nome: 'Luna Santos',
+            idade: 20,
+            altura: 1.67,
+            estadoCivil: 'Solteira'
+        },
+        {
+            nome: 'Aisha Silva',
+            idade: 25,
+            altura: 1.60,
+            estadoCivil: 'Solteira'
+        },
+        {
+            nome: 'Perola Martins',
+            idade: 58,
+            altura: 1.72,
+            estadoCivil: 'Viuva'
+        },
+        { 
+            nome: 'Lizz Dais',
+            idade: 31,
+            altura: 1.52,
+            estadoCivil: 'Casada'
+        }];
+        
+        document.write(Object.values(pessoas[0] ) + "<br>")
+        document.write("<br>")
+        document.write(Object.values(pessoas[1]) + "<br>")
+        document.write("<br>")
+        document.write(Object.values(pessoas[2]) + "<br>")
+        document.write("<br>")
+        document.write(Object.values(pessoas[3]) + "<br>")
+        document.write("<br>")
+
+
+          //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+
+        //ETAPA FULL
+
+        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+        // feito com a condição if e com o loop for
+        
+        /*var livros = [
+        {
+            id: 1,
+            titulo: 'Colega de Quarto',
+            anoPublicacao: 2015,
+            genero: 'Suspense Policial ',
+            autor: 'Victor  Bonini',
+            paginas: 280
+        },
+        {
+            id: 2,
+            titulo: 'Seis Anos Depois',
+            anoPublicacao: 2013,
+            genero: 'Romance, Ficção, Misterio ',
+            autor: 'Harlan Coben ',
+            paginas: 267 
+        },
+        {
+            id: 3,
+            titulo: 'O Expresso do Oriente',
+            anoPublicacao: 1934,
+            genero: 'Suspense Policial, Ficção',
+            autor: 'Aghata Christie',
+            paginas: 259
+        },
+        { 
+            id: 4,
+            titulo: 'Depois da Escuridão',
+            anoPublicacao: 2010,
+            genero: 'Suspense',
+            autor: 'Sidney Sheldon',
+            paginas: 352
+        },
+        {
+            id: 5,
+            titulo: 'Cemitério Maldito',
+            anoPublicacao: 2013,
+            genero: 'Terror',
+            autor: 'Stephen King',
+            paginas: 424
+        }
+        ];
+
+    function lerIdLivros(){
+       
+        for(var i=0; i<3 ; i++){
+        var codigo = prompt("Insira o código entre 1 e 5: ")
+            if(codigo == "" || codigo > 6){
+                alert("Codigo errado")
+            return lerIdLivros()
+        }
+      if(codigo == (Object(livros[0].id))){
+            document.write(Object.values(livros[0]))
+            document.write("<br>")
+       }
+       else  if(codigo == (Object(livros[1].id))){
+            document.write( Object.values(livros[1]))
+            document.write("<br>")
+       }
+       else  if(codigo == (Object(livros[2].id))){
+            document.write( Object.values(livros[2]))
+            document.write("<br>")
+       }
+       else  if(codigo == (Object(livros[3].id))){
+            document.write( Object.values(livros[3]))
+            document.write("<br>")
+       }
+       else  if(codigo == (Object(livros[4].id))){
+            document.write( Object.values(livros[4])) 
+            document.write("<br>")
+       }
+            
+    }
+}  
+
+lerIdLivros()*/
+
+   </script>  
+</html>
