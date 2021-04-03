@@ -1,4 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de casa</title>
+</head>
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
@@ -7,5 +14,48 @@
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+        //var numAleatorio; 
+        //Math.random(numeroAleatorio) //p criar numeros aleatorios de 1 à 100
+        var array = [
+                {
+                    nome: 'Amanda',
+                    idade: 25,
+                    cor: 'Rosa'
+               },
+               {
+                   nome: 'Luana',
+                   Idade: 22,
+                   cor: 'Amarelo'
+                },
+                {
+                   nome: 'Carol',
+                   Idade: 26,
+                   cor: 'Vermelho'
+                },
+                {
+                    nome: 'Barbara',
+                    Idade: 26,
+                    cor: 'Branco'
+                }
+                ];
+        
+        function mulheres() {
+         var inInfor = prompt('Insira um dos nomes: Amanda, Luana, Carol ou Barbara para saber mais ;)');
+                if (inInfor == 'Amanda') {
+                    alert(Object.values(array[0]))
+                } else if (inInfor == 'Luana') {
+                    alert(Object.values(array[1]))
+                } else if (inInfor == 'Carol') {
+                    alert(Object.values(array[2]))
+                } else if (inInfor == 'Barbara') {
+                    alert(Object.values(array[3]))
+                } else {
+                    alert('O nome inserido não consta em nosso banco de dados')
+                    return mulheres()
+            }
+        }
+        mulheres();
+            
     </script>
 </html>
