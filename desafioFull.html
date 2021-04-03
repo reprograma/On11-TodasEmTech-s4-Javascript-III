@@ -31,7 +31,7 @@
         {
             molho: "sem molho",
             massa: "massa clássica",
-            recheio: "presunto e cogumelos",
+            recheio: "presunto parma e rucula",
             fatias: "8 fatias",
             preco: 40 .toFixed(2),
 
@@ -41,7 +41,7 @@
         {
             molho: "sem molho",
             massa: "massa integral",
-            recheio: "presunto parma e rucula",
+            recheio: "escarola e azeitonas",
             fatias: "8 fatias",
             preco: 40 .toFixed(2),
 
@@ -59,7 +59,8 @@
 
 
         var pizzaSelected = prompt("Escreva o nome da pizza você gostaria de saber mais detalhes?");
-        
+        for(var i = 1; i <= 3; i++){
+
             if (pizzaSelected === 'margherita') {
                 alert(Object.entries(margherita));
             }
@@ -72,6 +73,7 @@
 
         if (pizzaSelected === 'parma') {
                 alert(Object.entries(parma));
+                
         }
 
         if (pizzaSelected === 'calzone') {
@@ -84,15 +86,22 @@
             return menu ()
             }
 
-    if (pizzaSelected !== pizzasMenu) 
+    else if (pizzaSelected !== pizzasMenu) 
       { 
             alert("Escreva um nome de pizza do nosso menu (verifque se grafia está correta. Use sempre letras minusculas)");
             return menu ()
             }
         }
-        menu ()
+
+            }
+                    menu ()
+
+      
+       
+     
 
 //ETAPA FULL
+
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
     </script>
 </html>

@@ -48,7 +48,36 @@ document.write((Object.values(pessoa)))
 //ETAPA1: Crie um objeto com 5 caracteristicas
 //ETAPA2: Altere a 3ª caracteristica deste objeto
 //ETAPA3: Delete a 4ª caracterisca deste objeto
- 
+
+var casa = {
+    telha: 100,
+    parede: "branca",
+    chao: "concreto",
+    porta: "madeira",
+    janela: 5,
+
+}
+
+casa.parede = "amarela"
+
+delete casa.porta
+
+document.write(Object.values(casa))
+
+var pizza = {
+    molho: "tomate",
+    farinha: "trigo",
+    recheio: "queijo",
+    fatias: 8,
+    preco: 35 .toFixed(2),
+
+}
+
+pizza.farinha = "integral"
+
+delete pizza.fatias
+
+document.write(Object.values(pizza))
 
 
 //E SE EU QUISER CRIAR MAIS MULTIPLOS ELEMENTOS DENTRO DE UM OBJETO? 
