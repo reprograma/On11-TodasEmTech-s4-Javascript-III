@@ -3,6 +3,113 @@
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
         
+       var familia =[
+
+           {
+           nome : "Agnes",
+           posição:"Mãe",
+           idade: 25,
+           tipo: "humana"    
+
+           },
+           { 
+            nome : "Luna",
+            posição : "Filha",
+            idade: 8,
+            tipo: "humana"   
+
+           },
+
+
+           {
+            nome: "Wanessa",
+            posição:"boadrasta",
+            idade: 27,
+            tipo: "humana"
+
+
+
+
+           },
+
+           {
+               nome: "Vespertine",
+               posição: "Filha",
+               idade: 3,
+               tipo: "Felina"
+
+
+
+
+
+
+
+           },
+
+           {
+            nome: "Bonjour",
+            posição: "Filho",
+            idade: 2,
+            tipo: "Felino"
+
+
+
+           }
+
+
+
+
+
+       ]  ;
+       
+       function pesquisarMembro(){
+            
+        var membro = prompt("Digite o nome do membro que deseja obter informações");
+    let verificar = familia.find(element => element.nome == membro);
+              
+        if ( ! membro){
+            
+            alert( "Membro não encontrado");
+            return pesquisarMembro();
+
+
+
+        } else if( verificar != undefined) {
+
+ alert( Object.values( familia.find( element => element.nome == membro)));
+            outrosMembros();
+
+
+
+        }else{
+            alert( "Membro não encontrado");
+            return pesquisarMembro();
+          
+
+        }
+
+
+
+
+       };
+     
+       pesquisarMembro();
+
+        function outrosMembros(){
+       for( var i =0; i <= familia.length; i++){
+                
+                alert(familia[i].nome);
+                alert(familia[i].posição);
+                alert(familia[i].tipo);
+    
+    
+    
+              }
+    
+            };
+       
+
+
 
         //ETAPA FULL
 
