@@ -1,0 +1,115 @@
+<html>
+    <style>
+        button{text-align: center;};
+    </style>
+    <script>
+        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+
+            let pessoas = [
+                  { nome:"Isabelle",
+                  idade:23,
+                  corFavorita:"amarelo",
+                  altura:1.70,
+                  solteirx:true},
+                  { nome:"Ava",
+                  idade:21,
+                  corFavorita:"prata",
+                  altura:1.76,
+                  solteirx:false},
+                  { nome:"João",
+                  idade:22,
+                  corFavorita:"azul",
+                  altura:1.82,
+                  solteirx:true},
+                  { nome:"Gustavo",
+                  idade:21,
+                  corFavorita:"verde",
+                  altura:1.80,
+                  solteirx:false},
+                  { nome:"Julia",
+                  idade:19,
+                  corFavorita:"vermelho",
+                  altura:1.73,
+                  solteirx:true}
+            ];
+            function leitura(){
+            let leituraNome = prompt("Insira o nome da pessoa que quer saber as informações de:");
+            var i;
+            let nomeValido = false;
+                for(i=0;i<5;i++){
+                    if(leituraNome == (Object(pessoas[i].nome))){
+                    document.getElementById("11").innerHTML = Object(pessoas[i].nome);
+                    document.getElementById("21").innerHTML = Object(pessoas[i].idade);
+                    document.getElementById("31").innerHTML = Object(pessoas[i].corFavorita);
+                    document.getElementById("41").innerHTML = Object(pessoas[i].altura);
+                    if(Object(pessoas[i].solteirx) == true){
+                        document.getElementById("51").innerHTML = "Essa pessoa ta solteiraaaa!"
+                    } else {
+                        document.getElementById("51").innerHTML = "Essa pessoa tem um amorzinho já!"
+                    }
+                    nomeValido = true;
+                    }
+                };
+                if(nomeValido == false){
+                alert("Nome não conta na database , insira um nome valido");
+                };
+            };
+        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+            function leituraMultipla(){
+                let j;
+                for(j=1;j<=3;j++){
+                    let leituraNome = prompt("Insira o nome da pessoa que quer saber as informações de:");
+                    var i;
+                    let nomeValido = false;
+                    for(i=0;i<5;i++){
+                        if(leituraNome == (Object(pessoas[i].nome))){
+                        document.getElementById("1"+String(j)).innerHTML = Object(pessoas[i].nome);
+                        document.getElementById("2"+String(j)).innerHTML = Object(pessoas[i].idade);
+                        document.getElementById("3"+String(j)).innerHTML = Object(pessoas[i].corFavorita);
+                        document.getElementById("4"+String(j)).innerHTML = Object(pessoas[i].altura);
+                        if(Object(pessoas[i].solteirx) == true){
+                            document.getElementById("5"+j).innerHTML = "Essa pessoa ta solteiraaaa!"
+                        } else {
+                            document.getElementById("5"+j).innerHTML = "Essa pessoa tem um amorzinho já!"
+                        }
+                        nomeValido = true;
+                        }
+                        }
+                        if(nomeValido == false){
+                            alert("Nome invalido")
+                        };
+                
+                };
+            };
+    </script>
+    <body style="background-color: lightblue;">
+        <h1 style="background-color: silver;">Deseja descobrir algumas informaçoes sobre os membros cadastrados nessa database? Clique no botão!</h1>
+        <button onclick=leitura()>Consultar uma pessoa!</button>
+        <button onclick=leituraMultipla()>Consultar Varias!</button>
+        <div style="background-color: silver">
+            <h4>Consulta 1</h4>
+            <p>Nome: <b id="11"> </b> </p>
+            <p>Idade:<b id="21"> </b> </p>
+            <p>Cor Favorita: <b id="31"> </b> </p>
+            <p>Altura: <b id="41"> </b> </p>
+            <p>Esta solteiro(a)? <b id="51"> </b> </p>
+        </div>
+        <div style="background-color: silver">
+            <h4>Consulta 2</h4>
+            <p>Nome: <b id="12"> </b> </p>
+            <p>Idade:<b id="22"> </b> </p>
+            <p>Cor Favorita: <b id="32"> </b> </p>
+            <p>Altura: <b id="42"> </b> </p>
+            <p>Esta solteiro(a)? <b id="52"> </b> </p>
+            </div>
+        <div style="background-color: silver">
+            <h4>Consulta 3</h4>
+            <p>Nome: <b id="13"> </b> </p>
+            <p>Idade:<b id="23"> </b> </p>
+            <p>Cor Favorita: <b id="33"> </b> </p>
+            <p>Altura: <b id="43"> </b> </p>
+            <p>Esta solteiro(a)? <b id="53"> </b> </p>
+        </div>
+    </body>
+</html>
