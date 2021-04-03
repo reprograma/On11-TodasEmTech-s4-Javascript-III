@@ -1,11 +1,79 @@
 <html>
+    <meta charset="UFT-8">
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
 
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+        
+        var livros = [
+        {
+            id: 1,
+            titulo: 'Colega de Quarto',
+            anoPublicacao: 2015,
+            genero: 'Suspense Policial ',
+            autor: 'Victor  Bonini',
+            paginas: 280
+        },
+        {
+            id: 2,
+            titulo: 'Seis Anos Depois',
+            anoPublicacao: 2013,
+            genero: 'Romance, Ficção, Misterio ',
+            autor: 'Harlan Coben ',
+            paginas: 267 
+        },
+        {
+            id: 3,
+            titulo: 'O Expresso do Oriente',
+            anoPublicacao: 1934,
+            genero: 'Suspense Policial, Ficção',
+            autor: 'Aghata Christie',
+            paginas: 259
+        },
+        { 
+            id: 4,
+            titulo: 'Depois da Escuridão',
+            anoPublicacao: 2010,
+            genero: 'Suspense',
+            autor: 'Sidney Sheldon',
+            paginas: 352
+        },
+        {
+            id: 5,
+            titulo: 'Cemitério Maldito',
+            anoPublicacao: 2013,
+            genero: 'Terror',
+            autor: 'Stephen King',
+            paginas: 424
+        }
+        ]
+
+    function lerIdLivros(){
+        
+        for(var i=0; i<3 ; i++){   //repeiotr ETAPA FULL
+            var codigo = prompt("Insira o código entre 1 e 5: ")
+            if(codigo == "" || codigo >= 6){
+                alert("Código Inválido")
+                return lerIdLivros()
+            }
+            var resultado = livros.find(function (elemento) {
+            return elemento.id == codigo
+            })
+       
+          for(var propriedade in resultado){
+           document.write("<br>")
+           document.write(propriedade + ": " + resultado[propriedade])
+          }
+
+   
+        }
+
+    }  
+    
+    lerIdLivros();
+
     </script>
 </html>
