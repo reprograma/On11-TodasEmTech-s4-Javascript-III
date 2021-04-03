@@ -1,11 +1,58 @@
-<html>
-    <script>
-        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
-        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: darkmagenta;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .desafio {
+            background: whitesmoke;
+            max-width: 800px;
+            height: 500px;
+            padding: 50px;
+            text-align: center;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
         
+        .resultado {
+            margin: 100px auto;
+        }
+        .buscar button {
+            color: white;
+            background: purple;
+            border: 0px black solid;
+            width: 250px;
+            padding: 20px;
+            cursor: pointer;  
 
-        //ETAPA FULL
+        }
+        .buscar input {
+            width: 250px;
+            padding: 18px;   
+     
+        }
 
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
-    </script>
+    </style>
+</head>
+<body>
+    <main>
+        <section class="desafio">
+            <h1>Resolução do Desafio</h1>
+             <div class="buscar">
+                <label for="usuario">Pesquisar : <input type="text" placeholder="digite o usuario" id="usuario"></label>
+                <a href="javascript: pesquisar()"><button>Pesquisar</button></a>
+            </div>
+            <div id="resultado" class="resultado"></div>
+        </section>
+    </main>
+    <script src="desafio.js"></script>
+ </body>
 </html>
