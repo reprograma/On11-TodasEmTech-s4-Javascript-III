@@ -3,9 +3,140 @@
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
         
+        var motoneta = [
+        {
+            codigo: 1,
+            marca:'Honda',
+            modelo:'Biz',
+            cilindrada: 125,
+            peso: 100,
+            cambio: 'marcha'
+        },
+        {
+            codigo: 2,
+            marca:'Yamaha',
+            modelo:'Xmax',
+            cilindrada: 250,
+            peso: 179,
+            cambio: 'automático'
+        },
+        {
+            codigo: 3,
+            marca:'Dafra',
+            modelo:'Citycom',
+            cilindrada: 300,
+            peso: 185,
+            cambio: 'automático'
+        },
+        { 
+            codigo: 4,
+            marca:'Suzuki',
+            modelo:'Downtown',
+            cilindrada: 300,
+            peso: 189,
+            cambio: 'automático'
+        },
+        {
+            codigo: 5,
+            marca:'Honda',
+            modelo:'Adv',
+            cilindrada: 150,
+            peso: 127,
+            cambio: 'automático'
+        }
+        ]
 
-        //ETAPA FULL
+    function escolherMotoneta(){
 
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+             var motonetaCodigo = prompt("Insira o código entre 1 e 5: ")
+            if(motonetaCodigo == "" || motonetaCodigo > 6){
+                alert("Código não confere! Digite novamente um código entre 1 a 5.")
+                return escolherMotoneta()
+            }
+            var resultado = motoneta.find(function (elemento) {
+            return elemento.codigo == motonetaCodigo
+            })
+
+          for(var propriedade in resultado){          
+           document.writeln(propriedade + ": " + resultado[propriedade])
+          }
+
+
+        }
+
+      
+
+    escolherMotoneta();
+
     </script>
+<script>
+//ETAPA FULL
+
+//Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+var motoneta = [
+        {
+            codigo: 1,
+            marca:'Honda',
+            modelo:'Biz',
+            cilindrada: 125,
+            peso: 100,
+            cambio: 'marcha'
+        },
+        {
+            codigo: 2,
+            marca:'Yamaha',
+            modelo:'Xmax',
+            cilindrada: 250,
+            peso: 179,
+            cambio: 'automático'
+        },
+        {
+            codigo: 3,
+            marca:'Dafra',
+            modelo:'Citycom',
+            cilindrada: 300,
+            peso: 185,
+            cambio: 'automático'
+        },
+        { 
+            codigo: 4,
+            marca:'Suzuki',
+            modelo:'Downtown',
+            cilindrada: 300,
+            peso: 189,
+            cambio: 'automático'
+        },
+        {
+            codigo: 5,
+            marca:'Honda',
+            modelo:'Adv',
+            cilindrada: 150,
+            peso: 127,
+            cambio: 'automático'
+        }
+        ]
+
+    function escolherMotoneta(){
+        for(var i=0; i<3 ; i++){   //repeiotr ETAPA FULL
+             var motonetaCodigo = prompt("Insira o código entre 1 e 5: ")
+            if(motonetaCodigo == "" || motonetaCodigo > 6){
+                alert("Código não confere! Digite novamente um código entre 1 a 5")
+                return escolherMotoneta()
+            }
+            var resultado = motoneta.find(function (elemento) {
+            return elemento.codigo == motonetaCodigo
+            })
+
+          for(var propriedade in resultado){
+           document.write("<br>")
+           document.write(propriedade + ": " + resultado[propriedade])
+          }
+
+
+        }
+    }
+      
+
+    escolherMotoneta();
+</script>
 </html>
