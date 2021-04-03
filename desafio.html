@@ -1,9 +1,58 @@
 <html>
+    <meta charset="UTF-8">
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
-
+        const lavourasStardewValley = [
+            {
+                nome: 'alho',
+                precoCompra: 40,
+                diasParaColheita: 4,
+                producaoContinua: false,
+                precoVenda: 60,
+            },
+            {
+                nome: 'arroz',
+                precoCompra: 40,
+                diasParaColheita: 6,
+                producaoContinua: false,
+                precoVenda: 30,
+            },
+            {
+                nome: 'batata',
+                precoCompra: 50,
+                diasParaColheita: 6,
+                producaoContinua: false,
+                precoVenda: 80,
+            },
+            {
+                nome: 'cafe',
+                precoCompra: 2500,
+                diasParaColheita: 10,
+                producaoContinua: true,
+                precoVenda: 15,
+            },
+            {
+                nome: 'morango',
+                precoCompra: 100,
+                diasParaColheita: 8,
+                producaoContinua: true,
+                precoVenda: 120,
+            }
+        ];
+        function lavouras(){
+            const nomeLavoura = prompt('Insira o nome da lavoura a ser consultada:');
+            const foundLavoura = lavourasStardewValley.find(lavoura => lavoura.nome === nomeLavoura);
+            if (!foundLavoura) {
+                alert('Insira um nome válido!');
+                return lavouras();
+            }
+            alert(`A lavoura ${foundLavoura.nome} tem preço de compra ${foundLavoura.precoCompra} ouros, ${foundLavoura.diasParaColheita} dias para colheita, tem produção contínua ${foundLavoura.producaoContinua} e preço de venda de ${foundLavoura.precoVenda} ouros.`);
+            for(i = 0; i <= 2; i++) {
+                alert(`Nome: ${lavourasStardewValley[i].nome}, preço de compra de ${lavourasStardewValley[i].precoCompra} ouros e preço de venda de ${lavourasStardewValley[i].precoVenda} ouros`);
+            }
+        }
+        lavouras();
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
