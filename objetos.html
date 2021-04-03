@@ -10,7 +10,12 @@
         //Objeto normalmente é utilizado para informar caracteriscicas de um atribuição (variavel).
 
         //Um objeto é como uma pessoa, a variavel é a pessoa e o que tem dentro dela são as caracteristicas dessa pessoa
-
+        var anaisa ={
+            sobrenome: 'Teodoro',
+            apelido: 'Fofa',
+            roupa: 'vermelha',
+            hobby: 'leitura'
+        }
 // SINTAXE DE OBJ:
 
 var pessoa = { //Declaração de que pessoa é um objeto com propriedades
@@ -46,10 +51,24 @@ document.write((Object.values(pessoa)))
 // (pessoa) = indica o nome do objeto que quero imprimir todos os valores
 
 //ETAPA1: Crie um objeto com 5 caracteristicas
+    var cantora = {
+    nome: "Madonna",
+    nacionalidade: "estadunidense",
+    nascimento: 1958,
+    musica: "Holiday",
+    album: "The Immaculate Collection",
+    genero: "pop"
+    };
 //ETAPA2: Altere a 3ª caracteristica deste objeto
-//ETAPA3: Delete a 4ª caracterisca deste objeto
- 
 
+
+//ETAPA3: Delete a 4ª caracteristica deste objeto
+    delete cantora.album;
+    console.log(cantora);//{"nome": "Madonna", "nacionalidade": "estadunidense", "nascimento": 1958, "genero": "pop"}
+ 
+    cantora.nascimento = false;
+    delete cantora.musica;
+    document.write(Object.values(cantora));
 
 //E SE EU QUISER CRIAR MAIS MULTIPLOS ELEMENTOS DENTRO DE UM OBJETO? 
 

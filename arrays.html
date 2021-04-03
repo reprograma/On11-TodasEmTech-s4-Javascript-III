@@ -35,7 +35,8 @@
 
         //Criando a lista da Keyla:
 
-        var listaCompraKeyla = ['1Kg de Abobrinha', '1 Leite Desnatado', '2 Miojos de Tomate', '1 Feijão Carioca']
+        var listaCompraKeyla = ['1Kg de Abobrinha'
+        , '1 Leite Desnatado', '2 Miojos de Tomate', '1 Feijão Carioca']
         alert(listaCompraKeyla) //Como meu array se chama listaCompraKeyla, ao pedir para alertar listaCompraKeyla, irei imprimir tudo que esta dentro.
 
         //Posso fazer array apenas com string? (texto)
@@ -69,7 +70,9 @@
         //EXERCICIO
 
         //Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
-
+        let cantorasNAcionais = ["Marisa Monte","Adriana Calconhoto","Ana Carolina","Ana Cañas","Roberta Sá"];
+        alert(cantorasNAcionais.length);
+        alert(cantorasNAcionais[4]);
 
         //E se eu quiser adicionar itens ao final do meu array?
 
@@ -119,10 +122,22 @@
         //EXERCICIO:
         //Pegue seu array criado no primeiro exercicio e teste os metodos passados aqui.
 
+        cantorasNAcionais.shift();
+        cantorasNAcionais.unshift("Tiê");
+        cantorasNAcionais.sort();
+        alert(cantorasNAcionais);
+
         //EXERCICIO:
 
 
         //Uma escola precisa montar a lista de alunos do 5º B (5 alunos). Crie um programa que receba CADA nome de aluno e imprima na tela em ordem alfabetica todos os alunos desta lista.
+        var turmaQuintoAno = Math.random() *5;
+        for(var i = 0; i < 3; i++){
+            turmaQuintoAno.push(prompt("Aluno, digite o seu nome:  "));
+             
+        };
+        turmaQuintoAno.sort();
+        alert(turmaQuintoAno);
 
 //Crie um array para armazenar uma lista de ingredientes para um bolo de chocolate
 // utilize includes para verificar se dentro na sua lista contém um ingrediente
@@ -162,6 +177,8 @@ alert(Object.values(pessoas[0]))
 
 //Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
 
-
+var mercado = [["frutas", "Melão", "Maçã", "Uva", "Abacaxi"], 
+["Grão", "Arroz", "Feijão", "Açúcar", "Farinha"], ["Carnes", "Frango","Toscana", "Coração", "Moela"], ["Higiene", "Escova", "Pasta", "Fio dental", "Creme"]];
+alert(mercado);
     </script>
 </html>
