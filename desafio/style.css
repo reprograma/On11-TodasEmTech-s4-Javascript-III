@@ -1,0 +1,4 @@
+div#res {
+    border: 1px solid black;
+    max-width: fit-content;
+}
