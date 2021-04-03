@@ -73,48 +73,55 @@
 
         //E se eu quiser adicionar itens ao final do meu array?
 
-        //metodo .push é utilizado para adicioanar elementos ao final do meu array idependente do tamanho e do formato do elemento
+        
 
         listaCompraKeyla.push('1kg Banana', '')
+
+        //metodo .push é utilizado para adicioanar elementos ao final do meu array idependente do tamanho e do formato do elemento
+
+        
+        listaCompraKeyla.splice([1])
 
         //Como remover um conjunto de elementos a partir de uma posição?
 
         // metodo .splice() remove a partir da posição passada para o mesmo
 
-        listaCompraKeyla.splice([1])
+        
 
+        listaCompraKeyla.splice(/* a partir da posição */ 3, /* remove 1 elemento */ 1)
         //Como remover um elemeto dentro do array?
 
         // .splice remove o elemento passando a posição que o mesmo se encontra e informando quantos devem ser removidos
 
-        listaCompraKeyla.splice(/* a partir da posição */ 3, /* remove 1 elemento */ 1)
 
+        listaCompraKeyla.pop()
         // E se eu quiser remover o ultimo elemento do meu array?
 
         //metodo .pop é utilizado para remoção do ultimo elemento do meu array
 
-        //EX:
+        
 
-        listaCompraKeyla.pop()
-
+        listaCompraKeyla.shift()
+        
         // E se eu quiser remover o primeiro elemento do meu array?
 
         //metodo .shift remove o primeiro elemento do meu array
 
-        listaCompraKeyla.shift()
+        
 
+        listaCompraKeyla.unshift()
         //Se eu quiser adicionar um elemento no primeiro lugar do meu array? (Substituir metodo .shift)
 
         //medoto .unshift atribui ao primeiro lugar um elemento
 
-        listaCompraKeyla.unshift()
-
-        //Como eu ordeno esse elementos dento do meu array?
+       
+        listaCompraKeyla.sort()
+         //Como eu ordeno esse elementos dento do meu array?
 
         //metodo .sort classifica a ordem de forma crescente (normalmente alfabetica)
 
-        listaCompraKeyla.sort()
 
+        
 
         //EXERCICIO:
         //Pegue seu array criado no primeiro exercicio e teste os metodos passados aqui.
