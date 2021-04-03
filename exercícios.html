@@ -1,0 +1,97 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        let itensSortidos = ['Bola', 'Garrafa', 'Chave', 'Garfo', 'Lápis', 'Mouse', 'Chinelo'];
+        alert(itensSortidos.length);
+        alert(itensSortidos[4]);
+        
+        itensSortidos.push('Borracha','Copo');
+        
+        itensSortidos.splice([length-2]);
+
+        itensSortidos.pop();
+
+        alert(itensSortidos);
+
+        itensSortidos.shift();
+
+        alert(itensSortidos);
+        
+        itensSortidos.unshift('Colher');
+        
+        alert(itensSortidos.sort());
+
+
+        nome = [];
+        numeroAlunos = +prompt(`Insira o número de alunos na turma: `);
+        for(i = 1 ;i <= numeroAlunos; i++){
+            nome.push(prompt(`Diga o nome da(o) aluna(o) Nº ${i}`));
+        }
+        document.write(`A ordem alfabética dos nomes é:`, nome.sort());
+
+
+        ingredientes = ['leite', 'ovos','farinha','fermento','chocolate'];
+
+        if(ingredientes.includes('leite')){
+            alert(`Sim, contém leite`);
+        }
+        else{
+            alert(`Adicione, leite à lista`);
+        }
+
+
+        let picaretasMinecraft = [{
+            material: 'Madeira',
+            durabilidade: 59,
+            dano: 2,
+            valor: 'N/A'
+        },
+        {
+            material: 'Pedra',
+            durabilidade: 131,
+            dano: 3,
+            valor: '1 esmeralda'
+        },
+        {
+            material: 'Ferro',
+            durabilidade: 250,
+            dano: 4,
+            valor: '7-22 esmeraldas'
+        },
+        {
+            material: 'Ouro',
+            durabilidade: 32,
+            dano: 2,
+            valor: 'N/A'
+        },
+        {
+            material: 'Diamante',
+            durabilidade: 1561,
+            dano: 5,
+            valor: '18-35 esmeraldas'
+        },
+        {
+            material: 'Netherita',
+            durabilidade: 2031,
+            dano: 6,
+            valor: 'N/A'
+        }
+    ]
+    for (property in picaretasMinecraft){
+        alert(Object.values(picaretasMinecraft[property]))
+    }
+
+
+    const armaduraTerraria = {
+        material: 'madeira',
+        defesaCabeca: 1,
+        defesaTorax: 1,
+        defesaPernas: 1,
+        custo: '75 madeiras'
+    }
+
+    armaduraTerraria.defesaTorax = 2;
+    delete armaduraTerraria.defesaPernas;
+
+    </script>
+</html>
