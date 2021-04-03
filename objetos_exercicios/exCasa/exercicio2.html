@@ -1,0 +1,66 @@
+<meta charset="UTF-8">
+<html>
+
+    <script>
+//ETAPA FULL
+
+        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+let luffy = {
+    nome: "luffy",
+    idade: 18,
+    altura: 1.74,
+    aniversario: "5 de Maio",
+    profissao: "Capitão"
+}
+
+let robin = {
+    nome: "robin",
+    idade: 30,
+    altura: 1.88,
+    aniversario: "6 de fevereiro",
+    profissao: "Arqueóloga"
+}
+
+let zoro = {
+    nome: "zoro",
+    idade: 21,
+    altura: 1.81,
+    aniversario: "11 de Novembro",
+    profissao: "Espadachim"
+}
+
+let sanji = {
+    nome: "sanji",
+    idade: 21,
+    altura: 1.80,
+    aniversario: "2 de Março",
+    profissao: "Cozinheiro"
+}
+
+let brook = {
+    nome: "brook",
+    idade: 88,
+    altura: 2.77,
+    aniversario: "3 de Abril",
+    profissao: "Músico"
+}
+
+let piratas = [luffy,robin,zoro,sanji,brook]
+
+
+let i = prompt("Insira número de personagens que você deseja informação:\n'Número máximo =5'")
+
+while (i>=0)
+{i = i-1
+    document.write (`${piratas[i].nome}<br>idade:${piratas[i].idade} anos<br>altura:${piratas[i].altura} m<br>aniversário:${piratas[i].aniversario}<br>profissão:${piratas[i].profissao}<br><br>`)
+ 
+}
+
+
+
+
+
+
+</script>
+</html>

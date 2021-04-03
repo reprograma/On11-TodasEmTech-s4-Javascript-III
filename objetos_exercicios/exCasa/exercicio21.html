@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<html>
+
+    <script>
+
+        //ETAPA FULL
+
+        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+        let luffy = {
+    nome: "luffy",
+    idade: 18,
+    altura: 1.74,
+    aniversario: "5 de Maio",
+    profissao: "Capitão"
+}
+
+let robin = {
+    nome: "robin",
+    idade: 30,
+    altura: 1.88,
+    aniversario: "6 de fevereiro",
+    profissao: "Arqueóloga"
+}
+
+let zoro = {
+    nome: "zoro",
+    idade: 21,
+    altura: 1.81,
+    aniversario: "11 de Novembro",
+    profissao: "Espadachim"
+}
+
+let sanji = {
+    nome: "sanji",
+    idade: 21,
+    altura: 1.80,
+    aniversario: "2 de Março",
+    profissao: "Cozinheiro"
+}
+
+let brook = {
+    nome: "brook",
+    idade: 88,
+    altura: 2.77,
+    aniversario: "3 de Abril",
+    profissao: "Músico"
+}
+
+let piratas = [luffy,robin,zoro,sanji,brook]
+
+
+//let verifica = prompt("Insira nome de pirata do bando: \nUse letras minúsculas")
+
+function verificacao(){
+    for(var i=1;i<4;i++){
+        let verifica = prompt("Insira nome de pirata do bando: \nUse letras minúsculas")
+if (verifica == piratas[0].nome ){
+    let a = 0
+    alert (`${piratas[a].nome}\nidade:${piratas[a].idade} anos\naltura:${piratas[a].altura} m\naniversário:${piratas[a].aniversario}\nprofissão:${piratas[a].profissao}`)
+}
+else if(verifica == piratas[1].nome){
+    let a = 1
+    alert (`${piratas[a].nome}\nidade:${piratas[a].idade} anos\naltura:${piratas[a].altura} m\naniversário:${piratas[a].aniversario}\nprofissão:${piratas[a].profissao}`)
+}
+else if(verifica == piratas[2].nome){
+    let a = 2
+    alert (`${piratas[a].nome}\nidade:${piratas[a].idade} anos\naltura:${piratas[a].altura} m\naniversário:${piratas[a].aniversario}\nprofissão:${piratas[a].profissao}`)
+}
+else if(verifica == piratas[3].nome){
+    let a = 3
+    alert (`${piratas[a].nome}\nidade:${piratas[a].idade} anos\naltura:${piratas[a].altura} m\naniversário:${piratas[a].aniversario}\nprofissão:${piratas[a].profissao}`)
+}
+else if (verifica == piratas[4].nome){
+    let a = 4
+    alert (`${piratas[a].nome}\nidade:${piratas[a].idade} anos\naltura:${piratas[a].altura} m\naniversário:${piratas[a].aniversario}\nprofissão:${piratas[a].profissao}`)
+}
+else {alert("Nome inválido")
+}
+}
+}
+
+
+verificacao()
+
+
+
+    </script>
+</html>

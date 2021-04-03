@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<html>
+
+    <script>
+
+//arrays
+//Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
+//adicione 2 itens
+//apague os 2 ultimos
+//apague o ultimo
+// remover o primeiro elemento
+//adicionar um elemento no primeiro lugar
+// classificar a ordem de forma crescente 
+
+let macarronada = ["carne","queijo","macarrao","tomate","creme de leite","pimenta","orégano","sal","batata palha","molho de tomate"]
+
+document.write(macarronada)
+document.write("<br>") //quebra de linha
+document.write(macarronada[4]) //o javascript começa a contagem do zero, mostrando o terceiro item da lista
+document.write("<br>")
+
+macarronada.push("cebola","alho") //adicionando 2 itens (está agora de 0 a 11)
+document.write(macarronada)
+document.write("<br>") 
+
+macarronada.splice(10,2) //apagando os 2 ultimos itens   (agora está de 0 a 9)
+document.write(macarronada)
+document.write("<br>")
+
+macarronada.pop(macarronada) //apagando o ultimo (agora está de 0 a 8)
+document.write(macarronada)
+document.write("<br>")
+
+macarronada.shift()
+document.write(macarronada)
+document.write("<br>")
+
+macarronada.unshift("frango")
+document.write(macarronada)
+document.write("<br>")
+
+macarronada.sort()
+document.write(macarronada)
+documento.write("<br>")
+
+
+</script>
+</html>
