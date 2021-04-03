@@ -1,11 +1,96 @@
+<meta charset="UTF-8">
 <html>
+
     <script>
-        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
-        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+
+//crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+// O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+//ETAPA FULL
+//Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+
+    let kamalla = {
+    nome: "Kamalla Harris",
+    idade: 56,
+    categoria: "Política",
+    cargo: "Vice Presidente Eleita dos Estados Unidos",
+    país: "EUA"
+}
+
+let jullie = {
+    nome: "Jullie Sweet",
+    idade: 53,
+    categoria: "Negócios",
+    cargo: "CEO da Accenture",
+    país: "EUA"
+}
+
+let andrea = {
+    nome: "Andrea Marques",
+    idade: 50,
+    categoria: "Negócios",
+    cargo: "Diretora Executiva e Financeira e de Relacionamento com Investidores",
+    país: "Brasil"
+}
+
+let angela = {
+    nome: "Angela Merkel",
+    idade: 66,
+    categoria: "Política",
+    cargo: "Chanceler Federal da Alemanha",
+    país: "Alemanha"
+}
+
+let oprah = {
+    nome: "Oprah Winfrey",
+    idade: 67,
+    categoria: "Jornalismo",
+    cargo: "Apresentadora do The Oprah Winfrey Show, Psicóloga, Empresária, Ativista",
+    país: "EUA"
+}
+
+let mulheresPoderosa = [kamalla,jullie,andrea,angela,oprah]
+
+
+let consulteMulherPoderosa = prompt("Insira nome (Nome e Sobrenome, inicia com letra maiúscula) da Mulher Poderosa da Atualidade")
+
+function mulherPoderosa(mulher){
+if (mulher == mulheresPoderosa[0].nome ){
+    let a = 0
+    alert (`${mulheresPoderosa[a].nome}\nidade:${mulheresPoderosa[a].idade} anos\ncategoria:${mulheresPoderosa[a].categoria} \ncargo:${mulheresPoderosa[a].cargo}\npaís:${mulheresPoderosa[a].país}`)
+}
+else if(mulher == mulheresPoderosa[1].nome){
+    let a = 1
+    alert (`${mulheresPoderosa[a].nome}\nidade:${mulheresPoderosa[a].idade} anos\ncategoria:${mulheresPoderosa[a].categoria} \ncargo:${mulheresPoderosa[a].cargo}\npaís:${mulheresPoderosa[a].país}`)
+}
+else if(mulher == mulheresPoderosa[2].nome){
+    let a = 2
+    alert (`${mulheresPoderosa[a].nome}\nidade:${mulheresPoderosa[a].idade} anos\ncategoria:${mulheresPoderosa[a].categoria} \ncargo:${mulheresPoderosa[a].cargo}\npaís:${mulheresPoderosa[a].país}`)
+}
+else if(mulher == mulheresPoderosa[3].nome){
+    let a = 3
+    alert (`${mulheresPoderosa[a].nome}\nidade:${mulheresPoderosa[a].idade} anos\ncategoria:${mulheresPoderosa[a].categoria} \ncargo:${mulheresPoderosa[a].cargo}\npaís:${mulheresPoderosa[a].país}`)
+}
+else if (mulher == mulheresPoderosa[4].nome){
+    let a = 4
+    alert (`${mulheresPoderosa[a].nome}\nidade:${mulheresPoderosa[a].idade} anos\ncategoria:${mulheresPoderosa[a].categoria} \ncargo:${mulheresPoderosa[a].cargo}\npaís:${mulheresPoderosa[a].país}`)
+}
+else {alert("Nome inválido")
+
+}
+}
+
+mulherPoderosa(consulteMulherPoderosa)
+
+let i = prompt("Insira número de personagens que você deseja informação:\n'Número máximo =5'")
+
+while (i>=0)
+{i = i-1
+    document.write (`${mulheresPoderosa[i].nome}<br>idade:${mulheresPoderosa[i].idade} anos<br>categoria:${mulheresPoderosa[i].categoria} <br>cargo:${mulheresPoderosa[i].cargo}<br>país:${mulheresPoderosa[i].país}<br><br>`)
+
+}
         
-
-        //ETAPA FULL
-
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
     </script>
 </html>
+
+

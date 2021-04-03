@@ -1,0 +1,30 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+
+var listaVegetais = ['Repolho', 'Nabo', 'Rabanete', 'Cenoura', 'couve', 'cebola', 'alho', 'pimentão', 'tomate', 'beterraba'];
+alert(listaVegetais)
+listaVegetais.push('1kg Banana', 'Abacate')
+alert(listaVegetais)
+listaVegetais.splice(10,2)
+alert(listaVegetais)
+listaVegetais.pop()
+alert(listaVegetais)
+listaVegetais.shift()
+alert(listaVegetais)
+listaVegetais.unshift('Batata')
+alert(listaVegetais)
+
+if(listaVegetais.includes('Pepino')){
+    alert('Sim, contém Pepino na lista de ingredientes')
+}else{
+    alert('Não, adicionei Pepino a lista de ingredientes')
+    listaVegetais.push('Pepino')
+}
+ alert(listaVegetais)   
+
+    </script>
+
+</html>
+
+
