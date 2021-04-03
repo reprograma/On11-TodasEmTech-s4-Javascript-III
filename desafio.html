@@ -2,6 +2,77 @@
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+
+        var pessoa1 = { //Declaração de que pessoa é um objeto com propriedades
+            nome: 'Vivi \n',
+            idade: '18 \n',
+            curso: 'Direito \n',
+            altura: '1.65 \n',
+            cor_favorita: 'Roxo \n',
+        }
+        
+        var pessoa2 = { //Declaração de que pessoa é um objeto com propriedades
+            nome: 'Diego \n',
+            idade: '7 \n',
+            curso: 'Gamer \n',
+            altura: '1.20 \n',
+            cor_favorita: 'Preto \n',
+        }
+
+        var pessoa3 = { //Declaração de que pessoa é um objeto com propriedades
+            nome: 'Fabio \n',
+            idade: '22 \n',
+            curso: 'Engenharia \n',
+            altura: '1.75 \n',
+            cor_favorita: 'Azul \n',
+        }
+        var pessoa4 = { //Declaração de que pessoa é um objeto com propriedades
+            nome: 'Thamires \n',
+            idade: '22 \n',
+            curso: 'Engenharia \n',
+            altura: '1.60 \n',
+            cor_favorita: 'Roxo \n',
+        }
+        var pessoa5 = { //Declaração de que pessoa é um objeto com propriedades
+            nome: 'Cris \n',
+            idade: '23 \n',
+            curso: 'Engenharia \n',
+            altura: '1.70 \n',
+            cor_favorita: 'Azul \n',
+        }
+        var pessoas = [ pessoa1, pessoa2, pessoa3, pessoa4, pessoa5];
+        
+        function dados(palavra){
+
+            if(palavra ==''){
+                return dados(palavra)
+
+            } else if(palavra == 'Vivi'){
+
+                alert(Object.values(pessoas[0]))
+
+            } else if(palavra == 'Diego' ){
+                alert(Object.values(pessoas[1]))
+
+            }   else if(palavra == 'Fabio' ){
+                alert(Object.values(pessoas[2]))
+
+            } else if (palavra == 'Thamires'){
+                alert(Object.values(pessoas[3]))
+
+            } else if (palavra == 'Cris'){
+                alert(Object.values(pessoas[4]))
+
+            }  else{
+                alert("Esta pessoa não está nos dados, por favor insira outro nome.")
+            }
+    }
+        for (i=0;i<3;i++){
+            var palavra = prompt("Digite o nome da pessoa: ")
+            dados(palavra)
+        }
+        
+
         
 
         //ETAPA FULL
