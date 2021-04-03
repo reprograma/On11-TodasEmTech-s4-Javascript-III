@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div>
+
+        <h1>
+            Cadastro de Pessoas
+        </h1>
+
+        <section>
+            <p>
+                <label for="nomesCadastrados"></label><strong>Nomes já Cadastrados no Bando de Dados:</strong>
+            </p>
+            <p>
+                <select name="selNomesCadastrados" id="selNomesCadastrados" size="10" multiple="multiple">
+                
+                </select>
+            </p>
+        </section>
+
+        <section>
+            <label for=""></label> <strong>Selecione quantos Cadastros desejar utilizando o ctrl para listar suas características</strong>
+            <p>
+                <input id="btnVerificar" type="button" value="Verificar">
+            </p>
+            <p>
+              <div id="res">
+
+              </div>
+            </p>
+            
+        </section>
+
+        <script type="module">
+            import verificar from './script.js'
+
+        </script>
+            
+    </div>
+    
+</body>
+</html>
