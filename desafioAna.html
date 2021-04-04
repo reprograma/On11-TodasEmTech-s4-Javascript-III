@@ -1,0 +1,77 @@
+<meta charset="UTF-8">
+<html>
+    <script>
+        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+        
+
+        //ETAPA FULL
+
+        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos.
+
+    var Paciente1 = { // declaração de que pessoa é um objeto compropriedade
+            nome = 'Ana',
+            idade = 41,
+            sexo = 'feminino',
+            altura = 1.65,
+            peso = 74,
+        }
+
+        var Paciente2 = { // declaração de que pessoa é um objeto com propriedade.
+            nome = 'Julya',
+            idade = 23,
+            sexo = 'feminino',
+            altura = 1.68,
+            peso = 70,
+
+        }
+        
+        var Paciente3 = {// declaração de que pessoa é um objeto com propriedade.
+            nome = 'Pérola',
+            idade = 21,
+            sexo = 'feminino',
+            altura = 1.70,
+            peso = 65,
+
+        }
+
+        var Paciente4 = { // declaração de que pessoa é um objeto com propriedade.
+            nome = 'Davi',
+            idade = 8,
+            sexo = 'masculino',
+            altura = 1.25,
+            peso = 22,
+        }
+        
+    var Paciente = [Paciente1, Paciente2, Paciente3, Paciente4];
+    
+    function dados(palavra){ 
+
+        if(palavra ==''){
+            return dados(palavra)
+
+        } else if(palavra == 'Ana'){
+            alert(object.values(Paciente[0]))
+
+        } else if(palavra == 'Julya'){
+            alert(object.values(Paciente[1]))
+
+        } else if(palavra == 'Pérola'){
+            alert(object.values(Paciente[2]))
+
+        } else if(palavra == 'Davi'){
+            alert(object.values(Paciente[3]))
+        } else {
+            alert("Este Paciente não está nos dados, por favor insira outro")
+        }
+    }
+
+    for(i=0;i<3;i++){
+        var Paciente = prompt("digite o nome do Paciente")
+        dados(palavra)
+
+    }
+   
+
+    </script>
+</html>
