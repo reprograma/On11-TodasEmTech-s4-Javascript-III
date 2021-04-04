@@ -1,0 +1,41 @@
+<html>
+    <meta charset='UTF-8'>
+        <script>
+            //Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
+            var teste = [
+                {
+                    nome: 'notebook',
+                    tempoUso: '8 anos',
+                    marca: 'Sony',
+                    tela: '16 pol'
+                },
+                {
+                    tipo: 'headset',
+                    marca: 'GTX'
+                },
+                {
+                    cor: 'lilás',
+                    altura: 1.71,
+                    name: 'Karla',
+                    idade: 26,
+                },
+                {
+                    raça: 'cocker spaniel',
+                    idade: 8,
+                    caracteristica: 'lindo',
+                    ehFofo: true
+                }
+            ]
+
+        for(i = 0; i < teste.length; i++){
+            
+            for(j = 0; j < Object.keys(teste[i]).length; j++){
+
+               document.write(`chave: ${Object.keys(teste[i])[j]}, valor: ${Object.values(teste[i])[j]}`)
+            }
+            document.write('\n||\n')
+        }
+
+
+        </script>
+</html>
