@@ -1,11 +1,61 @@
 <html>
-    <script>
-        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
-        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
+    <meta charset='UTF-8'>
+        <script>
+            /*crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido. O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+             FULL: Adicione um repetidor para que o usuário tenha as informações de até 3 elementos*/
 
-        //ETAPA FULL
+            var cearensesRevolucionarias = [
+                {
+                    id: 1,
+                    nome: 'Maria da Penha',
+                    nascimento: 1975,
+                    escreveuLivro: true
+                },
+                {
+                    id: 2,
+                    nome: 'Maria Tomásia Figueira Lima',
+                    nascimento: 1826,
+                    escreveuLivro: false  
+                },
+                {
+                    id: 3,
+                    nome: 'Jovita Feitosa',
+                    nascimento: 1848,
+                    escreveuLivro: false
+                },
+                {
+                    id: 4,
+                    nome: 'Fideralina Augusto Lima',
+                    nascimento: 1832,
+                    escreveuLivro: false
+                },
+                {
+                    id: 5,
+                    nome: 'Barbara Pereira de Alencar',
+                    nascimento: 1760,
+                    escreveuLivro: false
+                }
+                ]
 
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
-    </script>
+            function buscar(){
+                var getId = Number(prompt("Insira de qual id (entre 1 e 6) deseja exibir informações: "))
+                if(!getId){
+                    alert('id inválido, por favor insira entre 1 e 6')
+                    return buscar()
+                }else{
+                    alert(Object.values(cearensesRevolucionarias.find(function(cearenseRevolucionaria){
+                        console.log(typeof cearenseRevolucionaria);
+
+                        console.log(typeof getId);
+                        return cearenseRevolucionaria.id === getId
+                    })))
+            
+                }
+            }
+            
+            for(i = 0; i < 3; i++){
+                buscar()
+            }
+
+        </script>
 </html>
