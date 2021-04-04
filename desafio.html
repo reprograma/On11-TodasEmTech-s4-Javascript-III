@@ -7,5 +7,140 @@
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+/*     var nome = prompt "julia"   [ 5 objetos ou dicionario, elemento-objeto1,2,3,4.5 ]     
+
+
+        propriedades do elemento ou objeto 1
+        signo
+        cor do cabelo
+        estado civil
+        cidade 
+        genero
+        
+        propriedades do elemento ou objeto 2
+        legume
+        fruta
+        peixe
+        grao
+        raiz   
+
+/*
+// exemplo1
+
+  elemento1 = {
+      nome : "Bia",  // propriedade 1
+      cidade : "Niteroi",  // propriedade 2
+  }
+
+
+   array = [elemento1, elemento2, elemento3, elemento4...] 
+
+// exemplo 2
+
+   array  = [
+       {
+           nome : "Bia",
+           cidade : "Niteroi",
+       }
+   ]
+
+
+   ex 2
+   Beatriz Ramerindo19:56
+
+var alunasDaReprograma = [
+    {
+         nome : "Beatriz",
+    },
+    {
+        nome : "Julia",
+    }
+]
+
+var dadosDaJulia = {
+   nome : "julia",
+   telefone : "000000",
+   endereco : "rua Leticia",
+}
+
+
+console.log(dadosDaJulia.telefone)
+console.log(alunasDaReprograma[0].nome)
+/*/
+
+
+programaDaJulia = [     
+    {   
+       nome : "Julia",
+       telefone : 123456789,             // indice aqui é zero
+       cep : 05626010,
+       cidade : "São Paulo",
+       id : 0
+    
+    },
+    { 
+        nome : "Beatriz",
+        telefone : 1234567890,
+        cep : 05626020,                      // indice aqui é 1 pois começa no zeroooooooooooo
+        cidade : "Rio",
+        id : 1
+    },
+    { 
+        nome : "Agnes",
+        telefone : 12345678901,
+        cep : 05529060,
+        cidade : "Recife",
+        id : 2
+    },
+    {
+        nome : "Carol",
+        telefone : 123456789012,
+        cep : 05626000,
+        cidade : "Natal",
+        id : 3
+
+    },
+    {
+        nome : "Barbara",
+        telefone : 55559999,
+        cep : 05626010,
+        cidade : "Recife",
+        id : 4
+    }
+    
+
+   ]
+alert(programaDaJulia[0].nome)             // alert é o comando para aparecer na tela do pc. (programa da julia é o nome da minha varável que no caso aqui é um array) o [0] é o indice que estou buscando, no caso indice  zeroooo ; o ponto significa qual propriedade deste objeto eu quero printar, no caso o nome que vai aparecer Julia!!!!!
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+// alert(Object.values(programaDaJulia[id])) 
+
+
+function entradaVazia(){
+    var id = Number(prompt ("digite seu id" ))      //aqui estou criando uma varia´vel que é uma entrada para o usuário, no caso por causa do prompt, Number significa que esta entrada pelo usuario é um número (Number no js em letra maiuscula é uma função, que vai transformar de string para numero); prompt ('digite seu id') dentro de parenteses significa o que vai aparecer para o usuario na entrda ou caixa de digitação.obs o prompt nem sempre está dentro de parenteses.
+    if (isNaN(id)) {
+        entradaVazia()
+    }
+    else {
+        alert(Object.values(programaDaJulia[id]))
+    }
+   
+}
+
+entradaVazia()
+
+
     </script>
 </html>
+
+
+
+
+
+
+
+
+
+
