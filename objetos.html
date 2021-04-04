@@ -46,18 +46,23 @@ document.write((Object.values(pessoa)))
 // (pessoa) = indica o nome do objeto que quero imprimir todos os valores
 
 //ETAPA1: Crie um objeto com 5 caracteristicas
-//ETAPA2: Altere a 3ª caracteristica deste objeto
-//ETAPA3: Delete a 4ª caracterisca deste objeto
- 
+var objeto = {
+    nome: 'Mylena',
+    sobrenome: 'Amorim',
+    municipio: 'Pombos',
+    sexo: 'F',
+    curso: 'BCC'
+}
 
+//ETAPA2: Altere a 3ª caracteristica deste objeto
+objeto.municipio = 'Vitória';
+
+//ETAPA3: Delete a 4ª caracterisca deste objeto
+delete objeto.sexo;
+alert(Object.values(objeto));
 
 //E SE EU QUISER CRIAR MAIS MULTIPLOS ELEMENTOS DENTRO DE UM OBJETO? 
 
-//ARRAY
-
-        
-
-
-  
+//ARRAY        
     </script>
 </html>

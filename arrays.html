@@ -1,4 +1,10 @@
 <html>
+    <div id='imprimir'>
+        <p id='prod1'></p>
+        <p id='prod2'></p>
+        <p id='prod3'></p>
+        <p id='prod4'></p>
+    </div>
     <script>
         //Array:
 
@@ -11,157 +17,206 @@
 
        // Sintaxe:
 
-       var listaCompraKeyla =  ['', ''] 
+//        var listaCompraKeyla =  ['', ''] 
        
 
-     //Primeiro começamos atribuindo uma variável para o meu array, esta varivale se chama listaCompraKeyla.
-    // Após atribuir seguimos a sintaxe de [] para indicar que tudo o que esta la dentro faz parte do meu array
-    // utilizamos as , para separar os itens. Demonstramos que cada informação entre as virgulas é um elemento
+//      //Primeiro começamos atribuindo uma variável para o meu array, esta varivale se chama listaCompraKeyla.
+//     // Após atribuir seguimos a sintaxe de [] para indicar que tudo o que esta la dentro faz parte do meu array
+//     // utilizamos as , para separar os itens. Demonstramos que cada informação entre as virgulas é um elemento
 
-        /* Array é um objeto global, ou seja, é comum ele ser aplicado no escopo global e é utilizado para armazenar varias informações (objetos de alto nivel), ele executa uma função de lista */
+//         /* Array é um objeto global, ou seja, é comum ele ser aplicado no escopo global e é utilizado para armazenar varias informações (objetos de alto nivel), ele executa uma função de lista */
 
-        //MAS COMO ASSIM UMA FUNÇÃO DE LISTA?
+//         //MAS COMO ASSIM UMA FUNÇÃO DE LISTA?
 
-        /* 
+//         /* 
         
-        Lista supermercado da Keyla:
+//         Lista supermercado da Keyla:
 
-        1kg de Abobrinha
-        1 Leite Desnatado
-        2 Miojos de Tomate
-        1 Feijão Carioca
+//         1kg de Abobrinha
+//         1 Leite Desnatado
+//         2 Miojos de Tomate
+//         1 Feijão Carioca
 
-        */
+//         */
 
-        //Criando a lista da Keyla:
+//         //Criando a lista da Keyla:
 
-        var listaCompraKeyla = ['1Kg de Abobrinha', '1 Leite Desnatado', '2 Miojos de Tomate', '1 Feijão Carioca']
-        alert(listaCompraKeyla) //Como meu array se chama listaCompraKeyla, ao pedir para alertar listaCompraKeyla, irei imprimir tudo que esta dentro.
+//         var listaCompraKeyla = ['1Kg de Abobrinha', '1 Leite Desnatado', '2 Miojos de Tomate', '1 Feijão Carioca']
+//         alert(listaCompraKeyla) //Como meu array se chama listaCompraKeyla, ao pedir para alertar listaCompraKeyla, irei imprimir tudo que esta dentro.
 
-        //Posso fazer array apenas com string? (texto)
+//         //Posso fazer array apenas com string? (texto)
 
-        //Não, você pode fazer array com tudo que existe dentro do JS EX:
+//         //Não, você pode fazer array com tudo que existe dentro do JS EX:
 
-        var listaContas = [ 2 * 2, 4 * 2, 6 * 2]
-        alert(listaContas)
-
-
-        var um = 'Cebola'
-        var dois = 'Alho'
-        var tres = 'Salsa'
-
-        var listaVar = [um, dois, tres]
-        alert(listaVar)
+//         var listaContas = [ 2 * 2, 4 * 2, 6 * 2]
+//         alert(listaContas)
 
 
-        //E se eu quiser saber quantos itens tem dentro do meu array? 
-         //metodo .length é o ato de contagem da quantidade ou comprimento exato aquela variavel possui.
+//         var um = 'Cebola'
+//         var dois = 'Alho'
+//         var tres = 'Salsa'
 
-        alert(listaCompraKeyla.length) // 4
-        alert(listaVar.length) // 3
-        alert(listaContas.length) // 3
-
-        //Como eu leio separadamente cada um dos itens dentro do meu array?
-
-        alert(listaCompraKeyla[0]) // o array é contado do 0, sendo 0 o primeiro elemento, 1 o segundo e 2 o terceiro
+//         var listaVar = [um, dois, tres]
+//         alert(listaVar)
 
 
-        //EXERCICIO
+//         //E se eu quiser saber quantos itens tem dentro do meu array? 
+//          //metodo .length é o ato de contagem da quantidade ou comprimento exato aquela variavel possui.
 
-        //Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
+//         alert(listaCompraKeyla.length) // 4
+//         alert(listaVar.length) // 3
+//         alert(listaContas.length) // 3
 
+//         //Como eu leio separadamente cada um dos itens dentro do meu array?
 
-        //E se eu quiser adicionar itens ao final do meu array?
-
-        //metodo .push é utilizado para adicioanar elementos ao final do meu array idependente do tamanho e do formato do elemento
-
-        listaCompraKeyla.push('1kg Banana', '')
-
-        //Como remover um conjunto de elementos a partir de uma posição?
-
-        // metodo .splice() remove a partir da posição passada para o mesmo
-
-        listaCompraKeyla.splice([1])
-
-        //Como remover um elemeto dentro do array?
-
-        // .splice remove o elemento passando a posição que o mesmo se encontra e informando quantos devem ser removidos
-
-        listaCompraKeyla.splice(/* a partir da posição */ 3, /* remove 1 elemento */ 1)
-
-        // E se eu quiser remover o ultimo elemento do meu array?
-
-        //metodo .pop é utilizado para remoção do ultimo elemento do meu array
-
-        //EX:
-
-        listaCompraKeyla.pop()
-
-        // E se eu quiser remover o primeiro elemento do meu array?
-
-        //metodo .shift remove o primeiro elemento do meu array
-
-        listaCompraKeyla.shift()
-
-        //Se eu quiser adicionar um elemento no primeiro lugar do meu array? (Substituir metodo .shift)
-
-        //medoto .unshift atribui ao primeiro lugar um elemento
-
-        listaCompraKeyla.unshift()
-
-        //Como eu ordeno esse elementos dento do meu array?
-
-        //metodo .sort classifica a ordem de forma crescente (normalmente alfabetica)
-
-        listaCompraKeyla.sort()
+//         alert(listaCompraKeyla[0]) // o array é contado do 0, sendo 0 o primeiro elemento, 1 o segundo e 2 o terceiro
 
 
-        //EXERCICIO:
-        //Pegue seu array criado no primeiro exercicio e teste os metodos passados aqui.
+//         //EXERCICIO
 
-        //EXERCICIO:
+//         //Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
 
 
-        //Uma escola precisa montar a lista de alunos do 5º B (5 alunos). Crie um programa que receba CADA nome de aluno e imprima na tela em ordem alfabetica todos os alunos desta lista.
+//         //E se eu quiser adicionar itens ao final do meu array?
 
-//Crie um array para armazenar uma lista de ingredientes para um bolo de chocolate
-// utilize includes para verificar se dentro na sua lista contém um ingrediente
+//         //metodo .push é utilizado para adicioanar elementos ao final do meu array idependente do tamanho e do formato do elemento
 
-//Como utilizar includes
-array = ['ingrediente1', 'ingrediente2']
+//         listaCompraKeyla.push('1kg Banana', '')
 
-if(array.includes('ingrediente1')){
-    alert('sim, contem o ingrediente 1')
-}else{
-    alert('adicione o ingrediente a lista')
-}
+//         //Como remover um conjunto de elementos a partir de uma posição?
+
+//         // metodo .splice() remove a partir da posição passada para o mesmo
+
+//         listaCompraKeyla.splice([1])
+
+//         //Como remover um elemeto dentro do array?
+
+//         // .splice remove o elemento passando a posição que o mesmo se encontra e informando quantos devem ser removidos
+
+//         listaCompraKeyla.splice(/* a partir da posição */ 3, /* remove 1 elemento */ 1)
+
+//         // E se eu quiser remover o ultimo elemento do meu array?
+
+//         //metodo .pop é utilizado para remoção do ultimo elemento do meu array
+
+//         //EX:
+
+//         listaCompraKeyla.pop()
+
+//         // E se eu quiser remover o primeiro elemento do meu array?
+
+//         //metodo .shift remove o primeiro elemento do meu array
+
+//         listaCompraKeyla.shift()
+
+//         //Se eu quiser adicionar um elemento no primeiro lugar do meu array? (Substituir metodo .shift)
+
+//         //medoto .unshift atribui ao primeiro lugar um elemento
+
+//         listaCompraKeyla.unshift()
+
+//         //Como eu ordeno esse elementos dento do meu array?
+
+//         //metodo .sort classifica a ordem de forma crescente (normalmente alfabetica)
+
+//         listaCompraKeyla.sort()
+
+
+//         //EXERCICIO:
+//         //Pegue seu array criado no primeiro exercicio e teste os metodos passados aqui.
+
+//         //EXERCICIO:
+
+
+//         //Uma escola precisa montar a lista de alunos do 5º B (5 alunos). Crie um programa que receba CADA nome de aluno e imprima na tela em ordem alfabetica todos os alunos desta lista.
+
+// //Crie um array para armazenar uma lista de ingredientes para um bolo de chocolate
+// // utilize includes para verificar se dentro na sua lista contém um ingrediente
+
+// //Como utilizar includes
+// array = ['ingrediente1', 'ingrediente2']
+
+// if(array.includes('ingrediente1')){
+//     alert('sim, contem o ingrediente 1')
+// }else{
+//     alert('adicione o ingrediente a lista')
+// }
       
 
-// Um array por armazenar caracteristicas para esses elementos? SIM
+// // Um array por armazenar caracteristicas para esses elementos? SIM
 
-var pessoas = [
-    {//indica as caracteristicas do primeiro elemento
-        nome: 'Angela',
-altura: 1.65,
-estadoCivil: 'solteira',
-}, //fecha as caracteristicas do primiero elemento
-{// abre as caracteristicas do segundo elementro
-    nome: 'Isa',
-    altura: 1.70,
-estadoCivil: 'Casada'
+// var pessoas = [
+//     {//indica as caracteristicas do primeiro elemento
+//         nome: 'Angela',
+// altura: 1.65,
+// estadoCivil: 'solteira',
+// }, //fecha as caracteristicas do primiero elemento
+// {// abre as caracteristicas do segundo elementro
+//     nome: 'Isa',
+//     altura: 1.70,
+// estadoCivil: 'Casada'
 
-}// fecha as caracteristicas do segundo elemento
-];//fecha o array
+// }// fecha as caracteristicas do segundo elemento
+// ];//fecha o array
 
- //COMO eu posso imprimir as informações de cada um deles?
+//  //COMO eu posso imprimir as informações de cada um deles?
        
-alert(Object.values(pessoas[0]))
-
+// alert(Object.values(pessoas[0]))
 
 //EXERCICIO:
 
 //Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
+var mercadorias= [
+    {
+        produto: 'Notebook',
+        tipo: 'eletrônico',
+        preco: 2900,
+        codigo: 08809
+    },
+    {
+        produto: 'SmartPhone',
+        tipo: 'eletrônico',
+        preco: 3750,
+        codigo: 05501
+    },
+    {
+        produto: 'Mesa',
+        tipo: 'móvel',
+        preco: 1000,
+        codigo: 12201
+    },
+    {
+        produto: 'Geladeira',
+        tipo: 'eletrodoméstico',
+        preco: 4950,
+        codigo: 85513
+    },
+];
 
+var text = document.getElementById('imprimir');
+var prod1 = document.getElementById('prod1');
+var prod2 = document.getElementById('prod2');
+var prod3 = document.getElementById('prod3');
+var prod4 = document.getElementById('prod4');
 
+    prod1.innerHTML = `Produto: ${mercadorias[0].produto} <br> 
+    Tipo: ${mercadorias[0].tipo}<br>
+    Preço: ${mercadorias[0].preco}<br>
+    Código: ${mercadorias[0].codigo}`;
+
+    prod2.innerHTML = `Produto: ${mercadorias[1].produto} <br> 
+    Tipo: ${mercadorias[1].tipo}<br>
+    Preço: ${mercadorias[1].preco}<br>
+    Código: ${mercadorias[1].codigo}`;
+
+    prod3.innerHTML = `Produto: ${mercadorias[2].produto} <br> 
+    Tipo: ${mercadorias[2].tipo}<br>
+    Preço: ${mercadorias[2].preco}<br>
+    Código: ${mercadorias[2].codigo}`;
+
+    prod4.innerHTML = `Produto: ${mercadorias[3].produto} <br> 
+    Tipo: ${mercadorias[3].tipo}<br>
+    Preço: ${mercadorias[3].preco}<br>
+    Código: ${mercadorias[3].codigo}`;
     </script>
 </html>
