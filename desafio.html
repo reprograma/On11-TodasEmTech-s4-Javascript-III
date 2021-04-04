@@ -2,10 +2,65 @@
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
+ 
 
         //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+
+        let bbb = [
+            {nome: 'Carla',
+            idade: 30,
+            status: 'Eliminada',
+            estado: 'Rio de Janeiro'
+            },
+            {
+            nome: 'Karol',
+            idade: 33,
+            status: 'Eliminada',
+            estado: 'Paraná',            
+            },
+            {nome: 'Sarah',
+            idade: 29,
+            status:'Eliminada',
+            estado:'Distrito Federal',
+            },
+            {nome: 'Lumena',
+            idade: 31,
+            status: 'Eliminada',
+            estado: 'Bahia',
+            },
+
+            {nome: 'Vih', 
+            idade: 19,
+            status: 'Confinada',
+            estado: 'São Paulo',
+
+            }
+
+
+        ];
+        function SelecionarBbb() {
+         let mulher = prompt("Insira um nome da lista, e saiba tudo sobre a participante da casa: \n Carla; \n Karol; \n Sarah;\n Lumena;\n Vih.\n" )
+                if (mulher == 'Carla') {
+                    alert(Object.values(bbb[0]))
+                } else if (mulher == 'Karol') {
+                    alert(Object.values(bbb[1]))
+                } else if (mulher == 'Sarah') {
+                    alert(Object.values(bbb[2]))
+                } else if (mulher == 'Lumena') {
+                    alert(Object.values(bbb[3]))
+                } else if (mulher == 'Vih'){
+                    alert(Object.values(bbb[4]))
+                } else{    
+                    alert('O nome inserido não consta em nosso banco de dados')
+                    return SelecionarBbb(bbb)
+                }
+            }
+        SelecionarBbb()
+            
+
     </script>
+
 </html>
