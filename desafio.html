@@ -2,10 +2,49 @@
     <script>
         //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
         // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
-
-        //ETAPA FULL
+             //ETAPA FULL
 
         //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+function Pessoas(){  
+for(var i=0; i < 3; i++){   
+let infos = prompt("Digite um ID para obter mais informações");
+
+let infoCompleta = [
+    {
+        id: 1,
+        nome:"Eny",
+        idade: 27
+    },
+    {
+        id: 2,
+        nome: "Nayla",
+        idade: 4
+    }, 
+    {
+        id: 3,
+        nome: "Nazaré",
+        idade: 57
+    },
+    {
+        id: 4,
+        nome: "Luiz",
+        idade: 73
+    }
+]
+ if(infos == 1){
+     alert("Nome: "+ infoCompleta[0].nome + "; Idade: "+ infoCompleta[0].idade);
+ } else if(infos == 2){
+    alert("Nome: "+ infoCompleta[1].nome + "; Idade: "+ infoCompleta[1].idade)
+ }else if(infos == 3){
+    alert("Nome: "+ infoCompleta[2].nome + "; Idade: "+ infoCompleta[2].idade)
+ } else if(infos == 4){
+    alert("Nome: "+ infoCompleta[3].nome + "; Idade: "+ infoCompleta[3].idade)
+ } else {
+     alert("ID informado não consta na lista!")
+ }
+    }
+        }
+Pessoas()
+   
     </script>
 </html>
