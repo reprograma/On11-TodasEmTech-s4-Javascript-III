@@ -1,11 +1,83 @@
 <html>
-    <script>
-        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
-        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
+    <!DOCTYPE html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+            // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+            
+            var alunos = [
+                {nome: 'Maria',
+                idade: 12,
+                ano: 6,
+                cidade: 'Uberaba',
+                situação: 'O aluno foi aprovado.',
+                },
 
-        //ETAPA FULL
+                {nome: 'João',
+                idade: 12,
+                ano: 6,
+                cidade: 'Uberaba',
+                situação: 'O aluno foi aprovado.',
+                }, 
 
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
-    </script>
+                {nome: 'Patricia',
+                idade: 11,
+                ano: 6,
+                cidade: 'Santa Rosa',
+                situação: 'O aluno foi aprovado.',
+                },
+
+
+                {nome: 'Vitor',
+                idade: 12,      
+                ano: 6,
+                cidade: 'Nova Ponte',
+                situação: 'O aluno está de recuperação.',
+                },
+
+                {nome: 'Milena',
+                idade: 12,
+                ano: 6,
+                cidade: 'Uberaba',
+                situação: 'O aluno está de recuperação.',
+                },
+            ]
+
+            function buscaAluno(){
+                var nomeInserido= prompt('Insira o nome do aluno.')
+                var alunoEncontrado= false
+                for (i=0;i<alunos.length-1;i++){
+                    if(alunos[i].nome==nomeInserido){
+                        alunoEncontrado=true
+                        
+                        document.write(`Os dados do aluno ${nomeInserido} são:\n`)
+                        document.write(`${'<br>'}nome: ${alunos[i].nome}`)
+                        document.write(`${'<br>'}idade: ${alunos[i].idade}`)
+                        document.write(`${'<br>'}cidade: ${alunos[i].cidade}`)
+                        document.write(`${'<br>'}ano: ${alunos[i].ano}`)
+                        document.write(`${'<br>'}situação: ${alunos[i].situação}`)
+                    }          
+                }
+                if(alunoEncontrado==false){
+                    alert("O aluno não foi encontrado.")
+                    return buscaAluno();
+                
+                }
+            }
+            buscaAluno();
+
+            
+            //alunos.filter((aluno)=>aluno.nome==nomeInserido)
+            //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+        </script>
+    </body>
+    
+
 </html>
