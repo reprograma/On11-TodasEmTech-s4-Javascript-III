@@ -1,11 +1,84 @@
 <html>
-    <script>
-        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
-        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
-        
+<script>
 
-        //ETAPA FULL
+    //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+    // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
 
-        //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
-    </script>
+    var listaVeiculos = [
+
+        {
+            id: 1,
+            modelo: 'Fusca',
+            ano: 1970,
+            cor: 'Preto',
+            placa: 'PRF-1578'
+        },
+        {
+            id: 2,
+            modelo: 'Uno-Fiesta',
+            ano: 2000,
+            cor: 'Branco',
+            placa: 'NGH-6020'
+        },
+        {
+            id: 3,
+            modelo: 'Gol',
+            ano: 2010,
+            cor: 'Cinza',
+            placa: 'KLS-5178'
+        },
+        {
+            id: 4,
+            modelo: 'Palio',
+            ano: 2011,
+            cor: 'Preto',
+            placa: 'MJK-1452'
+        },
+        {
+            id: 5,
+            modelo: 'Siena',
+            ano: 2019,
+            cor: 'Vermelho',
+            placa: 'PRF-4148'
+        }
+    ];
+
+    function veiculos() {
+
+        var getCodigo = prompt("Digite o código ID do veículo: ");
+
+        if (getCodigo == '' || getCodigo <= 0 || getCodigo >= 6) {
+
+            alert("Código ID inválido");
+
+            veiculos();
+
+        } else {
+
+            alert(Object.values(listaVeiculos.find(element => element.id == getCodigo)));
+        }
+    };
+    veiculos();
+
+    //ETAPA FULL
+
+    //Adicione um repetidor para que o usuário tenha as informação de até 3 elementos
+
+    getCodigo = prompt("Digite o código ID do veículo: ");
+
+    var inputId = listaVeiculos.find(function (element) {
+        return element.id == getCodigo
+    })
+
+    for (var propriedade in inputId) {
+        document.write('</br>')
+        document.write(propriedade + " = " + inputId[propriedade])
+
+    };
+
+    // não consegui fazer com que o resultado fosse de apenas 3 elementos, na opção do for.
+
+
+</script>
+
 </html>
