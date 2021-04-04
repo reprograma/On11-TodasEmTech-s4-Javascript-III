@@ -1,0 +1,37 @@
+<html>
+    <script>
+
+    var pessoa = {
+    
+        nome : 'PRISCILA',
+        idade : 27,
+        cor : 'rosa',
+        altura : 1.62
+
+    } 
+    
+    pessoa.nome = 'Maria' // muda a propriedade do objeto de ref.
+    
+    alert (pessoa.idade) // alerta uma das propriedades do objeto, de forma individual
+
+    pessoa.musica = 'Drops' // adiciona uma nova propriedade ao objeto
+
+    delete pessoa.altura // deleta uma prioridade do objeto
+
+    alert (Object.values(pessoa)) // chama todas as propriedades do objeto no alert
+
+    //ou
+
+    document.write((Object.values(pessoa))) // saída direto na tela
+
+    var pessoa1 = {
+
+        // exemplo com informações do usuário
+    } 
+
+    var nome1 = prompt("Digite seu nome: ");
+
+    document.write((Object.values(pessoa1))) // saída direto na tela
+
+    </script>
+</html>

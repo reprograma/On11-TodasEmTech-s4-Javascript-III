@@ -1,0 +1,39 @@
+<html>
+    <script>
+
+//EXERCICIO
+
+//Crie um array com itens sortidos (de 5 a 10 itens). Imprima na tela a quantidade de itens armazenados no array. Descubra qual o quinto elemento deste array.
+
+
+var carro = ['modelo','cor','ano','placa','fabricante','motor']
+
+alert(carro.length); // imprime o comprimento do array
+
+alert(carro[5]); // imprime a posição do elemento
+
+carro.push('conversor','airbag'); // adiciona um ou mais elementos ao array
+alert(carro);
+
+carro.splice(6,2) // remove a parti do zero, apenas 1 elemento, não precisa do []
+alert(carro);
+
+// ou
+
+carro.splice([4]) // remove a partir da posição passada, precisa do []
+alert(carro);
+
+carro.pop() // remove o utimo elemento do array
+alert(carro);
+
+carro.shift() // remove o primeiro item do array
+alert(carro);
+
+carro.unshift('radio') // atribui um elemento a primeira posição do array, ou substitui a posição
+alert(carro);
+
+carro.sort() // classifica em ordem alfabetica ou organizar a lista do array
+alert(carro);
+
+    </script>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <script>
+
+//ETAPA1: Crie um objeto com 5 caracteristicas
+
+var carro = {
+
+    modelo : 'fusca',
+    cor : 'verde',
+    ano : 1970,
+    placa : 'pwp-1010',
+    fabricante :  'Volkswagen',
+    motor : 'Boxer de 4 cilindros'
+
+}
+
+//ETAPA2: Altere a 3ª caracteristica deste objeto
+
+carro.placa = 'abc-2020'
+
+//ETAPA3: Delete a 4ª caracterisca deste objeto
+
+delete carro.fabricante
+
+carro.carroceria = 'Fastback 2 portas' // adiciona uma nova propriedade ao objeto
+
+document.write((Object.values(carro))) // saída direto na tela
+
+
+    </script>
+</html>
