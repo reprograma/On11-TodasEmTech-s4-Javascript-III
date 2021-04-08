@@ -1,0 +1,57 @@
+<html>  
+<meta charset="UTF-8">
+<script>
+    //Crie um array para armazenar uma lista de ingredientes para um bolo de chocolate
+    var boloChocolate = ['chocolate','leite', 'ovos','fermento','farinha','acucar','manteiga']
+
+    if (boloChocolate.includes('Calda de chocolate')){
+        alert("Sim, contem o ingrediente infomado");
+   } else {
+    alert('Não possui esse ingrediente, por favor incluir');
+   }
+
+   if (boloChocolate.includes('chocolate')){
+        alert("Sim, contem o ingrediente infomado");
+   } else {
+    alert('Não possui esse ingrediente, por favor incluir');
+   }
+
+    ///Crie um ARRAY com 4 elementos, de até 4 caracteristicas para cada um deles e imprima suas informações na tela
+
+    var domesticos = [{
+        nome: 'Blanc',
+        peso: ' 5kg',
+        cor: ' Branco',
+        personalidade: 'Carinhoso',
+        raca: ' SRD'
+    },
+    {   nome: 'Botão',
+        peso: ' 4.500kg',
+        cor: ' Marrom',
+        personalidade: ' Reservada',
+        raca: ' SRD'
+    },  
+    {
+        nome: 'Pxon',
+        peso: ' 4kg',
+        cor: ' Preto',
+        personalidade: ' Hiperativo',
+        raca: ' SRD'
+    }, 
+    {
+        nome: 'Dandara',
+        peso: ' 30kg',
+        cor: ' Marrom',
+        personalidade: ' Protetor',
+        raca: 'Boxer'
+    }];
+
+    alert(Object.values(domesticos[0]));
+    alert(Object.values(domesticos[1]));
+    alert(Object.values(domesticos[2]));
+    alert(Object.values(domesticos[3]));
+
+    
+
+</script>
+</html>

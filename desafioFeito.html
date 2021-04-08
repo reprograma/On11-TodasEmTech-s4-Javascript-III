@@ -1,0 +1,67 @@
+<html>
+    <script>
+        
+        //crie um programa em que o usuário insira um nome e retorne para ele as propriedades deste nome inserido
+        // O programa  pode ter um array com até 5 elementos (cada elemento pode ter até 5 propriedades).
+     var amigas = [
+         {
+          id: 18,
+          nome: 'Lara',
+          idade: 27,
+          signo: 'Peixes',
+          caracteristica: 'Avoada'
+        },
+        {
+          id: 16,
+          nome:  'Daniela',
+          idade:26,
+          signo: 'Gemeos',
+          caracteristica: 'Engraçada'
+        },
+        { id: 15,
+          nome: 'Leticia',
+          idade: 25,
+          signo: 'Aries',
+          caracteristica: 'Braba'
+        },
+        { id: 11,
+          nome: 'Luana',
+          idade: 28,
+          signo: 'Aquario',
+          caracteristica: 'Afetiva'
+        },
+        { id: 27,
+          nome: 'Rafa',
+          idade: 27,
+          signo: 'Peixes',
+          caracteristica: 'Festeira'
+        } ]    
+                
+            
+        function Pessoa(){
+           
+        var inInfo = Number(prompt('Informe o dia do aniversario para localizar a amiga:'))
+
+        if (inInfo == 18){
+        alert(Object.values(amigas[0]))
+     } else if (inInfo == 16){
+        alert(Object.values(amigas[1]))
+     } else if (inInfo == 15){
+        alert(Object.values(amigas[2]))
+     } else if (inInfo == 11){
+        alert(Object.values(amigas[3]))
+     } else if (inInfo == 27){
+        alert(Object.values(amigas[4])) 
+     } else {
+         alert('Amiga não localizada, tente novamente')
+         return Pessoa();
+     }    
+    }    
+    
+    for (var i = 0; i< 3; i++ ) 
+    Pessoa();
+
+    </script>
+
+
+</html>

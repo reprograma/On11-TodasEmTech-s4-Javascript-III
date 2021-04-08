@@ -1,0 +1,28 @@
+<html>  
+    <meta charset="UTF-8">
+<script>
+    var gato = {
+        nome: 'Blanc ',
+        idade: '5 anos ',
+        raca: 'SRD ',
+        pelagem: 'Branco ',
+        peso: '5kg ',
+        caracteristica: 'Carinhoso'
+    }
+    document.write("Formato Inicial: ");
+    document.write(Object.values(gato));
+    document.write("<br />")
+
+    gato.pelagem = 'Branco e Cinza '
+    document.write("3ª caracteristica alterada: ");
+    document.write(Object.values(gato));
+    document.write("<br />")
+
+    delete gato.peso
+    document.write("4ª caracteristica deletada: ");
+    document.write(Object.values(gato));
+
+
+</script>
+
+</html>
