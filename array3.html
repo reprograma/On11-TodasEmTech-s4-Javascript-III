@@ -1,0 +1,40 @@
+<html>  
+    <meta charset="UTF-8">
+<script>
+// Exercico 2
+var animais = ['gato', 'cachorro','passaro','tartaruga', 'galinha', 'bode','vaca']
+alert(animais.length);
+alert(animais[4]);
+
+animais.push('cavalo', 'serpente');
+alert(animais);
+
+alert(animais.splice(3,1));
+alert(animais);
+
+animais.pop('serpente');
+alert(animais);
+
+animais.shift();
+alert(animais);
+
+animais.push('elefante', 'girafa');
+alert(animais);
+alert(animais.splice(6,2));
+alert(animais);
+alert(animais.splice(4,1));
+alert(animais);
+
+animais.unshift('raposa');
+alert(animais);
+
+alert(animais.sort());
+
+var num = [9,8,3,6,2,1,0]
+//observei que eu colocar 1,5,100,2,270,6,7 ele organiza 1,100,2,270,5,6,7.
+//gostaria de entender pq e como organizar de linear. 
+alert(num.sort());
+
+
+</script>
+</html>
